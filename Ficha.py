@@ -34,17 +34,13 @@ while repetir == "S" :
     
     try:
         if res == "d" : 
-                loop = "s"
+                exec(open("DiceRoller.py").read())
 
-        while loop == 's':
-            Dice = int(input("Digite o valor do dado que deseja rolar: "))
-            Resultado = random.randint(1,int(Dice))
-    
-            print(Resultado)
-    
-            loop = input("Deseja Rolar mais um Dado? (S ou N)").lower()
+        if res == "f" :
+            exec(open("modifier.py").read())
+
+
     except: 
-        print('bosta')
+        print("Formato Invalido, insira um valor correto")
     
-
 
