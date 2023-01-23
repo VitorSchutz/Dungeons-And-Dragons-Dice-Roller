@@ -18,6 +18,6 @@ while repetir == "S" :
 
 
     except: 
-        print("Formato Invalido, insira um valor correto")
+        print("==============================================================")
     
 
