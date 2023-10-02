@@ -12,6 +12,21 @@ def DiceRoller12():
     Resultado12 = ("=", random.randint(1,int(12)))
     texto_d12["text"] = Resultado12
 
+def DiceRoller10():
+    Resultado10 = ("=", random.randint(1,int(10)))
+    texto_d10["text"] = Resultado10
+
+def DiceRoller8():
+    Resultado8 = ("=", random.randint(1,int(8)))
+    texto_d8["text"] = Resultado8
+
+def DiceRoller6():
+    Resultado6 = ("=", random.randint(1,int(6)))
+    texto_d6["text"] = Resultado6
+
+def DiceRoller4():
+    Resultado4 = ("=", random.randint(1,int(4)))
+    texto_d4["text"] = Resultado4
 
 def modifier():
     valor = () #Adicionar o valor do atributo
@@ -83,4 +98,31 @@ botaod12 = Button(janela, text="Rolar um D12", command= DiceRoller12)
 botaod12.grid(column=2, row=2)
 texto_d12 = Label(janela,text="")
 texto_d12.grid(column=3, row=2)
+
+#botão do D10
+botaod10 = Button(janela, text="Rolar um D10", command= DiceRoller10)
+botaod10.grid(column=2, row=3)
+texto_d10 = Label(janela,text="")
+texto_d10.grid(column=3, row=3)
+
+#botao do D8
+botaod8 = Button(janela, text= "Rolar um D8", command= DiceRoller8)
+botaod8.grid(column=2, row=4)
+texto_d8 = Label(janela,text="")
+texto_d8.grid(column=3, row=4)
+
+#botao do D6
+botaod6 = Button(janela, text= "Rolar um D6", command= DiceRoller6)
+botaod6.grid(column=2, row=5)
+texto_d6 = Label(janela,text="")
+texto_d6.grid(column=3, row=5)
+
+#botao do D4
+botaod4 = Button(janela, text= "Rolar um D4", command= DiceRoller4)
+botaod4.grid(column=2, row=6)
+texto_d4 = Label(janela,text="")
+texto_d4.grid(column=3, row=6)
+
+
 janela.mainloop()
+
