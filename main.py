@@ -2,6 +2,29 @@ import random
 from tkinter import *
 from tkinter import ttk
 
+## Variaveis & Sistemas de linguagem
+
+
+from languageSwitch import linguage
+
+if linguage == "english":
+    LinRollD20 = "Roll D20"
+    LinRollD12 = "Roll D12"
+    LinRollD10 = "Roll D10"
+    LinRollD8 = "Roll D8"
+    LinRollD6 = "Roll D6"
+    LinRollD4 = "Roll D4"
+
+
+if linguage == "portuguese":
+    LinRollD20 = "Rolar D20"
+    LinRollD12 = "Rolar D12"
+    LinRollD10 = "Rolar D10"
+    LinRollD8 = "Rolar D8"
+    LinRollD6 = "Rolar D6"
+    LinRollD4 = "Rolar D4"
+
+
 
 
 def DiceRoller20():
@@ -85,40 +108,40 @@ def modifier():
 
 
 janela = Tk()
-janela.title("Dungeon & Dragons Dice Roller ver2.0")
+janela.title("Dungeon & Dragons Dice Roller ver: Beta 1.2.0")
 
 #Botão do D20
-botaod20 = Button(janela, text="Rolar um D20", command= DiceRoller20)
+botaod20 = Button(janela, text=LinRollD20, command= DiceRoller20)
 botaod20.grid(column=2, row=1)
 texto_d20 = Label(janela,text="")
 texto_d20.grid(column=3, row=1)
 
 #botão do D12
-botaod12 = Button(janela, text="Rolar um D12", command= DiceRoller12)
+botaod12 = Button(janela, text=LinRollD12, command= DiceRoller12)
 botaod12.grid(column=2, row=2)
 texto_d12 = Label(janela,text="")
 texto_d12.grid(column=3, row=2)
 
 #botão do D10
-botaod10 = Button(janela, text="Rolar um D10", command= DiceRoller10)
+botaod10 = Button(janela, text=LinRollD10, command= DiceRoller10)
 botaod10.grid(column=2, row=3)
 texto_d10 = Label(janela,text="")
 texto_d10.grid(column=3, row=3)
 
 #botao do D8
-botaod8 = Button(janela, text= "Rolar um D8", command= DiceRoller8)
+botaod8 = Button(janela, text=LinRollD8, command= DiceRoller8)
 botaod8.grid(column=2, row=4)
 texto_d8 = Label(janela,text="")
 texto_d8.grid(column=3, row=4)
 
 #botao do D6
-botaod6 = Button(janela, text= "Rolar um D6", command= DiceRoller6)
+botaod6 = Button(janela, text=LinRollD6, command= DiceRoller6)
 botaod6.grid(column=2, row=5)
 texto_d6 = Label(janela,text="")
 texto_d6.grid(column=3, row=5)
 
 #botao do D4
-botaod4 = Button(janela, text= "Rolar um D4", command= DiceRoller4)
+botaod4 = Button(janela, text=LinRollD4, command= DiceRoller4)
 botaod4.grid(column=2, row=6)
 texto_d4 = Label(janela,text="")
 texto_d4.grid(column=3, row=6)
